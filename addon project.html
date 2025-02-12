@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project html</title>
+    <style>
+        body {
+            background-image: url("https://wwwnc.cdc.gov/travel/images/during-travel-map.jpg");
+            background-size: cover;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        img {
+            max-width: 300px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid plum;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px 8px;
+            transition: all 150ms ease-in-out;
+        }
+
+        button:hover{
+            background: plum;
+        }
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 20px;
+        }
+        .travelling-intro-picture {
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            transition: all 150ms ease-in-out;
+        }
+        .travelling-intro-picture:hover {
+            filter: contrast(70%);
+            transform: scale(1.2);
+         
+        }
+        p{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .grid {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+        }
+        .grid img {
+        width: 100%;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        }
+        .grid img:hover{
+         transform: scale(2);  
+        }
+        .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+        }
+        .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+        }
+        .dark a {
+            color: cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="theme-Button"> change theme</button>
+ <div class="container">
+    <h1>
+        TRAVELLING
+    </h1>
+    <h2>I Love Travelling ,Travelling is my hobby</h2>
+    <img src="https://wwwnc.cdc.gov/travel/images/during-travel-map.jpg" alt="" class="travelling-intro-picture">
+<div class="grid">
+    <img src="https://t4.ftcdn.net/jpg/06/06/73/93/240_F_606739336_JJI4UnPTCwkbRU1y3dvwhnkXPUswW0Ns.jpg" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fXrHJzhYD6ing_AIL2YVybRw1uaHnWzotQ&s" alt="">
+    <img src="https://media.istockphoto.com/id/1096035138/photo/beautiful-young-couple-relaxing-after-hiking-and-taking-a-break.jpg?s=612x612&w=0&k=20&c=iwNan7K7gbiIl2unv-9EuE5Yej-h_l1OrLNMel0husU=" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBBDj3XXEG4Lo9fDeRqKU7MF_0_-b3x6mX4BZoDy2jt8iv8dxDBI6yDBj8fMPakHcWeCs&usqp=CAU" alt="">
+</div>
+    <p>
+        Traveling is the time I use to read and listen to music. 
+        This also gives me the time to reflect deeply on my life’s goals and where I am right now. It is an ideal opportunity to break free from a routine lifestyle. 
+        I feel very much relaxed during my travel and enjoy seeing new scenes and landscapes. It gives me time to discover more about myself. 
+        
+        Self-confidence is another quality that I developed as a result of travelling.
+         Whenever I travel, I had to be responsible for my own luggage, tickets and documents.
+         When I am in my home town, I used to be shy to talk to new people. But during my travels, I learnt to talk to strangers and ask for help whenever I needed it. 
+         This gave me the confidence that I can make new friends. Also, new places sometimes had new customs that I had to adapt to.
+    </p>
+</div>
+    <footer>
+        coded by <a href="https://app.netlify.com/teams/mercy-biolex/sites">MERCY OGUNTOYINBO</a>
+    </footer>
+    <script>
+        function changeTheme() {
+        
+         let body = document.querySelector("body");
+         if(body.classList.contains("dark")) {
+            body.classList.remove("dark");
+         } else{
+            body.classList.add("dark");
+         }
+
+        }
+
+        let themeButton = document.querySelector(".theme-Button");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+</body>
+</html>

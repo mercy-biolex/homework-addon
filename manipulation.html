@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulation html</title>
+    <style>
+        .dark {
+            background: black;
+        }
+    </style>
+</head>
+<body class="Dark">
+    <button>Dark theme</button>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector ("body");
+            body.classList.add("dark");
+
+        }
+
+        let themebutton = document.querySelector ("button");
+
+        themebutton.addEventListener ("click" , changeTheme);
+
+    </script>
+</body>
+</html>
